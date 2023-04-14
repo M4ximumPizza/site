@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Logan's Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
+    <link rel="stylesheet" href="src/mobile-style.css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+
+    <header id="main-header">
+      <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <i class="fas fa-circle-notch"></i> LA°
+          </a>
+          <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-align-right text-light"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#main-header"
+                >HOME <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#main-about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#main-project">WORK</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#main-contact">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container text-left header-ctr">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-sm-12 header-text">
+            <h2>
+              #<a class="typewrite" data-period="2000" id="shuffleText" data-type=' Minecraft Legend!,
+              I am learning Computer Science!, Coding for 3 years!, Programmer from the USA!,
+              Probably playing Minecraft!, A very humorous person!, 12500 hours in Minecraft!, Made by Logan!,
+              The next Mr. Abernathy!, Cinnamon Bears are my fav candy!, That one guy!,
+              I live to tell the tale!, Love the fam!, 4th of July is fav Holiday!, Very patriotic!, Hardwell is fav song artist!,
+              Gorges on cookies like there is no future!, I run like a gazelle they say!, Ran a 5:32 mile!, Ran 8 miles in under 53m!,
+              I like to do Dad jokes quite often!, I type 150 words a min!, I am somewhat ambidextrous!, I enjoy reading open-source code!,
+              Vanilla is my fav flavor!, I code faster at night!, Professional idiot at day~ maniac programmer by night!,
+              Code I made? -> @me ~ All else? -> message request!, Computer enthusiast!, Better at solving problems than preventing them!
+              2 year Java Developer!, 2 year Python Developer'>
+              <span class="wrap"></span>
+            </a>
+              <script>
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+let textArray = document.getElementById("shuffleText").getAttribute("data-type").split(",");
+shuffleArray(textArray);
+
+document.getElementById("shuffleText").setAttribute("data-type", JSON.stringify(textArray));
+</script>
+            </h2>
+              <h1 id="my-text">Hello world! I am Logan Abernathy</h1>
+            <script>
+      var randomNumber = Math.floor(Math.random() * 500) + 1;
+      if (randomNumber <= 1) {
+        document.getElementById("my-text").innerHTML = "Hello world! I am Abernathy Logan";
+      }
+            </script>
+              <h5>
+                I am a student who is learning Computer Science that codes mostly
+                in Java and CSS.
+              </h5>
+              <br />
+            </div>
+          </div>
+        </div>
+      </center>
+    </header>
+
+    <main id="main-screen">
+      <section class="section-1">
+        <div class="screen">
+          <div class="content-sec">
+            <p>
+              Programming today is a race between software engineers striving
+              to build bigger and better idiot-proof programs and the Universe
+              trying to produce bigger and better idiots. So far, the Universe
+              is winning.
+            </p>
+            <p class="text-right">- Rick Cook</p>
+          </div>
+        </div>
+        <div class="screen">
+          <div class="content-sec">
+            <p>
+              “It is far better to grasp the universe as it really is than to
+              persist in delusion, however satisfying and reassuring.”
+            </p>
+            <p class="text-right">- Carl Sagan</p>
+          </div>
+        </div>
+        <div class="screen">
+          <div class="content-sec">
+            <p>
+              “I hope what I’ve learned helps you find your way. Most of all, I hope
+              you’ve learned that in this world of mines and crafting, the most
+              important thing you can craft is you.”
+            </p>
+            <p class="text-right">- Max Brooks</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="main-about" class="section-2">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-6 col-12">
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="panel text-left">
+                <h2>About</h2>
+                <h3>Logan Abernathy</h3>
+                <h4 id="mincecraft">Self taught Game developer and Minecraft modder </h4>
+                <script>
+      var randomNumber = Math.floor(Math.random() * 1000) + 1;
+      if (randomNumber <= 1) {
+        document.getElementById("mincecraft").innerHTML = "Self taught Minceraft modder and Game developer!";
+      }
+      </script>
+                <p>
+                  I'm a passionate learner who's always willing to learn and
+                  work across technologies and domains. I'm currently into Java
+                  Development and working on my Java Development kit.
+                  Apart from that, I am a highly technical Minecrafter with pushing
+                  the limits of vanilla survival to its limits.
+                </p>
+                <h4>SKILLS</h4>
+                <p>
+                  Java, C++, Python, Site Development, <br />
+                  Git, Github, VSCode, Linux,<br />
+                  MC Technical
+                </p>
+
+                <h6>You can find me, <b>@M4ximumpizza</b></h6>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-3 container-fluid p-0">
+        <div class="container-fluid text-center">
+          <div
+                  class="numbers d-flex flex-md-row flex-wrap justify-content-center"
+          >
+            <div class="rect">
+              <h1>4</h1>
+              <a href="https://github.com/M4ximumPizza" target="_blank"
+              ><p><i class="fab fa-github"></i> Github</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="main-project" class="section-4">
+        <div class="container text-center">
+          <h1 class="text-dark">Projects I have done</h1>
+          <p class="text-secondary">Kindly visit My Github Profile for My Projects: <a href="https://github.com/M4ximumPizza">M4ximumpizza</a></p>
+        </div>
+        <div class="cards">
+          <div class="d-flex flex-md-row flex-wrap justify-content-center">
+            <div
+              class="card mr-2 d-inline-block shadow-lg"
+              style="width: 18rem"
+            >
+              <img src="assets/background.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title">Hypernova</h4>
+                <p class="card-text">
+                  Decodes Minecraft code into a faster format and more reliable usage.
+                </p>
+              </div>
+              <div class="card-body">
+                <a
+                  href="https://github.com/M4ximumPizza/Hypernova"
+                  target="_blank"
+                  class="card-link"
+                  >Project link</a>
+              </div>
+            </div>
+            <div
+              class="card mr-2 d-inline-block shadow-lg"
+              style="width: 18rem"
+            >
+              <img
+                src="assets/java.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-title">Croton</h4>
+                <p class="card-text">Croton is a heavy JDK that enables the user to have a fast and functional jdk.</p>
+              </div>
+              <div class="card-body">
+                <a href="https://github.com/GeoStudios/Croton" class="card-link">Project Link</a>
+              </div>
+            </div>
+            <div
+              class="card mr-2 d-inline-block shadow-lg"
+              style="width: 18rem"
+            >
+              <img
+                src="assets/background-def.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-title">New Project 3</h4>
+                <p class="card-text">Not Listed Yet.</p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="main-contact" class="section-5">
+        <div class="quote">
+          <h4>
+            Computers let you make mistake faster than any invention in human
+            history - with the posible exceptions of handguns and tequila.
+            <br />
+            <br /><b>- Someone on the Internet </b>
+          </h4>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-fluid p-0">
+        <div class="row text-left">
+          <div class="col-md-9">
+            <h4 class="text-light">Thank you</h4>
+            <p class="text-muted">For any suggestion you can message me on Discord</p>
+            <p class="gmail">M4ximumpizza#4712</p>
+          </div>
+        </div>
+      </div>
+      <div class="pt-5 text-center">
+        <p class="pt-2 text-muted">
+          Copyright ©2023 All rights reserved | This site is
+          <i class="fas fa-code"></i> by
+          <a class="sp" href="https://github.com/M4ximumPizza"
+          ><span> Logan Abernathy </span></a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+    ></script>
+    <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+    ></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>
