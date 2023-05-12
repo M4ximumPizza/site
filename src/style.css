@@ -242,6 +242,35 @@ header .btn {
   background: var(--bggradient);
 }
 
+/********** section 3.5 **************/
+
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 15rem;
+  height: auto;
+  padding-top: 3.5vmin;
+  margin: 2rem;
+  border-radius: 0.5em;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.numbers .rect h1 {
+  font-size: 4rem;
+  color: tomato;
+}
+
+.numbers .rect p {
+  font-family: var(--Rubik);
+  font-size: 1.5rem;
+}
+
+.section-3.5 {
+  background: #dd2476;
+  background: var(--bggradient);
+}
+
 /********** section 4 **************/
 .section-4 .container {
   padding-top: 6vmin;

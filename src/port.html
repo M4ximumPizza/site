@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Logan's Portfolio</title>
+
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="port.css" />
+    <link rel="stylesheet" href="mobile-style.css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+</button>
+<script>
+      var mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+
+<header id="main-header">
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-circle-notch"></i> LA°
+            </a>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-align-right text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"
+                        >HOME <span class="sr-only">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container text-left header-ctr">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-7 col-sm-12 header-text">
+                <h2>
+                    #<span class="typewrite" id="shuffleText"></span>
+                </h2>
+                <h1 id="my-text">Hello world! I am Logan Abernathy</h1>
+                <h5>
+                    I am a student who is learning Computer Science and codes mostly in Java and CSS.
+                </h5>
+            </div>
+        </div>
+    </div>
+    <script src="random.js"></script>
+    </center>
+</header>
+
+<section>
+    <div class="container text-center">
+        <h1 class="text-dark">My blog!</h1>
+    </div>
+    <div class="cards" id="images">
+        <div class="d-flex flex-md-row flex-wrap justify-content-center">
+            <div
+                    class="card mr-2 d-inline-block shadow-lg"
+                    style="width: 22rem"
+            >
+                <img
+                        src="../assets/background-def.png"
+                        class="card-img-top"
+                        alt="..."
+                />
+                <div class="card-body">
+                    <h4 class="card-title">New Blog 3</h4>
+                    <p class="card-text">Not Assembled Yet.</p>
+                </div>
+                <div class="card-body">
+                    <a href="#" class="card-link"></a>
+                </div>
+            </div>
+            <div
+                    class="card mr-2 d-inline-block shadow-lg"
+                    style="width: 22rem"
+            >
+                <img
+                        src="../assets/background-def.png"
+                        class="card-img-top"
+                        alt="..."
+                />
+                <div class="card-body">
+                    <h4 class="card-title">New Blog 3</h4>
+                    <p class="card-text">Not Assembled Yet.</p>
+                </div>
+                <div class="card-body">
+                    <a href="#" class="card-link"></a>
+                </div>
+            </div>
+            <div
+                    class="card mr-2 d-inline-block shadow-lg"
+                    style="width: 22rem"
+            >
+                <img
+                        src="../assets/background-def.png"
+                        class="card-img-top"
+                        alt="..."
+                />
+                <div class="card-body">
+                    <h4 class="card-title">New Blog 3</h4>
+                    <p class="card-text">Not Assembled Yet.</p>
+                </div>
+                <div class="card-body">
+                    <a href="#" class="card-link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="container-fluid p-0">
+        <div class="row text-left">
+            <div class="col-md-9">
+                <h4 class="text-light">Thank you</h4>
+                <p class="text-muted">For any suggestion you can message me on Discord</p>
+                <p class="gmail">M4ximumpizza#4712</p>
+            </div>
+        </div>
+    </div>
+    <div class="pt-5 text-center">
+        <p class="pt-2 text-muted">
+            Copyright ©2023 All rights reserved | This site is
+            <i class="fas fa-code"></i> by
+            <a class="sp" href="https://github.com/M4ximumPizza"
+            ><span> Logan Abernathy <br> </span></a
+            >
+            Version 1.2
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+></script>
+<script src="main.js"></script>
+</body>
+</html>

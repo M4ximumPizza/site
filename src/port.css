@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet&display=swap");
+
+:root {
+  --Snigle-font: "sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --bggradient: linear-gradient(90deg, #00bdff 0%, #00ff51 100%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--Rubik);
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header a {
+  font-family: var(--Snigle-font);
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+header {
+  background: var(--bggradient);
+}
+
+header .nav-item:last-child {
+  padding-right: 10.5em;
+}
+
+header .nav-item {
+  padding: 1em;
+}
+
+header .nav-link {
+  font-size: 1.2em;
+  background: white;
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.3s ease-out;
+}
+
+header .navbar-brand {
+  padding-left: 8rem;
+  font-size: 1.8em;
+}
+
+header .nav-link:hover {
+  background-position: -100%;
+  transform: rotate(10deg);
+}
+
+header .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 28vmin;
+  font-family: var(--Rubik);
+  color: whitesmoke;
+}
+
+header .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-5 img {
+  width: 90%;
+}
+
+header .container .col-md-7 {
+  font-family: "Rubik", sans-serif;
+}
+
+header .container .col-md-7 h4 {
+  padding: 1vmin;
+  letter-spacing: 1.2px;
+}
+
+header .btn {
+  border-radius: 30px;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+/********** Section-1 **************/
+
+#section1 {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Add the desired background color */
+}
+
+.section-image {
+  background-image: url(image.jpg); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  width: 200px; /* Set the desired width */
+  height: 150px; /* Set the desired height */
+  margin-bottom: 20px;
+}
+
+#section1 h2 {
+  margin-bottom: 10px;
+}
+
+#section1 p {
+  margin: 0;
+}
+
+/********** footer **************/
+
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 7vmin 22vmin;
+  padding-bottom: 10px;
+}
+
+footer .sp {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: #dd2476;
+  margin: 0.4rem;
+  font-size: 2em;
+  transition: color 0.3s linear;
+}
+footer .column i:hover {
+  color: #ff4e9e;
+}
+
+footer p.gmail {
+  color: #dd2476;
+  transition: color 0.3s linear;
+}
+
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 3em;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  z-index: 100;
+  bottom: 55px;
+  right: 30px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: #ffff;
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #404040;
+}
