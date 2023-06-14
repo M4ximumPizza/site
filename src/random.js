@@ -37,7 +37,7 @@ function typewrite(lines) {
       currentLine = currentLine.slice(0, -1);
       typewriteElement.textContent = currentLine;
     } else {
-      timeout = isDeleting ? 1000 : 3500; // Pause for 1 seconds after deletion, 5 seconds after line display
+      timeout = isDeleting ? 1000 : 1200; // Pause for 1 seconds after deletion, 5 seconds after line display
       isDeleting = !isDeleting;
 
       if (!isDeleting) {
