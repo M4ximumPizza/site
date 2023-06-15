@@ -3,7 +3,7 @@
 :root {
   --Snigle-font: "sniglet", cursive;
   --Rubik: "Rubik", cursive;
-  --bggradient: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  --bggradient: linear-gradient(10deg, #3a47d5 40%, #00d2ff 80%);
 }
 
 * {
