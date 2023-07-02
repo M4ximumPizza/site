@@ -1,15 +1,34 @@
 window.addEventListener('DOMContentLoaded', function() {
-  var date = new Date();
-  var month = date.getMonth() + 1; // January is 0
-  var day = date.getDate();
+  // Check if it's July 4th
+  var today = new Date();
+  var isIndependenceDay = today.getMonth() === 6 && today.getDate() === 4;
+  var isHalloween = today.getMonth() === 9 && today.getDate() === 31;
+  var isChristmas = today.getMonth() === 11 && today.getDate() === 25;
+  var isNewYear = today.getMonth() === 0 && today.getDate() === 1;
+  var isAprilFools = today.getMonth() === 3 && today.getDate() === 1;
+  var isValentines = today.getMonth() === 1 && today.getDate() === 14;
+  var isThanksgiving = today.getMonth() === 10 && today.getDate() === 26;
 
-  if (month === 7 && day === 4) { // Check if it's July 4th
-    var splashes = ["Happy Independence Day!"]; // Create an array with only the desired splash text
-    typewrite(splashes); // Call the typewrite function with the modified splash text
-  if (month === 12 && day === 25) {
-  var splashes = ["Merry Christmas!"];
-    typewrite(splashes);
+  if (isThanksgiving) {
+    document.getElementById('shuffleText').textContent = 'Happy Thanksgiving!';
+  }
+  if (isAprilFools) {
+    document.getElementById('shuffleText').textContent = 'Happy April Fools Day!';
+  }
+  if (isNewYear) {
+    document.getElementById('shuffleText').textContent = 'Happy New Year!';
+  }
+  if (isChristmas) {
+    document.getElementById('shuffleText').textContent = 'Merry Christmas!';
+  }
+  if (isHalloween) {
+    document.getElementById('shuffleText').textContent = 'Happy Halloween!';
+  } else
+  if (isIndependenceDay) {
+    // It's July 4th, display the message
+    document.getElementById('shuffleText').textContent = 'Happy Independence Day!';
   } else {
+    // It's not July 4th, proceed as normal
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'splashes.txt', true);
     xhr.onreadystatechange = function() {
@@ -23,7 +42,6 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// The rest of the code remains unchanged
 function shuffleArray(array) {
   for (var i = array.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
